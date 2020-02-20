@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:regular,bold,italic&subset=latin,latin-ext');
+
+.app {
+  background: url('images/blue-sky.jpg') no-repeat center center fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-family: lato, Arial, sans-serif;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.app-header {
+  background-color: #282c34;
+  color: #fff;
+  font-size: calc(10px + 2vmin);
+}
+
+.forecast {
+  padding: 20px;
+}
+
+.city-heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.weather-form {
+  margin: 0 auto;
+  max-width: 400px;
+
+  button {
+    height: calc(1.5em + 0.75rem + 2px);
+    width: 130px;
+  }
+
+  .form-row {
+    margin: 10px 0;
+  }
+}
+
+.alert {
+  margin: 0 auto;
+}
+
+.weather-container {
+  margin-top: 20px;
+
+  .weather-container-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.weather-box {
+  border-radius: 5px;
+  color: #fff;
+  margin: 5px;
+  padding: 10px;
+  position: relative;
+  text-shadow: 0 0 3px rgb(0, 0, 0);
+  width: 228px;
+
+  &.clouds {
+    background: url('./images/clouds.jpg');
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  }
+
+  &.snow {
+    background: url('./images/snow.jpg');
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(50, 50, 50, 0.3);
+  }
+
+  &.rain {
+    background: url('./images/rain.jpg');
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 100, 0.3);
+  }
+
+  &.clear {
+    background: url('./images/clear.jpg');
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 200, 0.3);
+  }
+}
+
+.weather-box {
+  .date {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .high-temp {
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
+
+.favourites h2 {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.add-favourite,
+.minus-favourite {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.add-favourite {
+  color: #008900;
+}
+
+.minus-favourite {
+  color: #b32e2e;
+}
